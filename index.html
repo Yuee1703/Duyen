@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetic Store</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Cosmetic Store</h1>
+    </header>
+    <main>
+        <h2>Our Best-Selling Products</h2>
+        <ul>
+            <li>1.Lipstick</li>
+            <li>2.Foundation</li>
+            <li>3.Moisturizer</li>
+        </ul>
+        <h2>Featured Products</h2>
+        <img src="https://files.oaiusercontent.com/file-KiT8oXVap3tRnKQYaj6qvq?se=2025-02-04T07%3A15%3A46Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D8833462d-35c2-4182-9e6e-7361b5abd07e.webp&sig=RD/BALhgtdsTTOZAomFl2kNtLW1nWDYbNCzsMhX7%2BJo%3D" alt="Lipstick">
+        <img src="https://files.oaiusercontent.com/file-KJZYmKrZQT9gqPo1A7vaiC?se=2025-02-04T07%3A15%3A57Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D2ebfdf42-1666-456e-9c0e-9a5d941e5c6e.webp&sig=rZdVxdOiOGhVC/G9hNFtFCKLoDzocpq/7%2BpzKGxJ5%2BI%3D" alt="Foundation">
+        <img src="https://files.oaiusercontent.com/file-BGD7tJ3WbveUehAbcaF5uh?se=2025-02-04T07%3A16%3A06Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D2abe7942-217b-4e3c-9290-71d7eefa7c78.webp&sig=VMPEsep1JcLgNQd1EuTN5%2Bu28lnDDcZ39RZICCwwY9k%3D" alt="Moisturizer">
+    </main>
+    <footer>
+        <button id="backToTop">fly to top</button>
+        <script>
+            let mybutton = document.getElementById("backToTop");
+            
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            
+            mybutton.onclick = function() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </footer>
+</body>
+</html>
